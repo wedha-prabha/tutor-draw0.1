@@ -400,7 +400,7 @@ with col1:
     if st.button("Clear Chat"):
         st.session_state.chat_history = []  # Clear the chat history
         st.session_state.chat = genai.GenerativeModel(
-            model_name="gemini-2.0-pro",
+            model_name="gemini-3.5 flask",
             generation_config=generation_config
         ).start_chat(history=[])
         st.rerun()  # Rerun the app to reflect the changes
