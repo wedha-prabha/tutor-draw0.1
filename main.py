@@ -358,7 +358,7 @@ if 'chat_history' not in st.session_state:
 
 if 'chat' not in st.session_state:
     st.session_state.chat = genai.GenerativeModel(
-        model_name="gemini-2.5-flash",
+        model_name="gemini-3.5-flash",
         generation_config=generation_config
     ).start_chat(history=[])
     initial_response = convo(system_instruction, st.session_state.chat)
